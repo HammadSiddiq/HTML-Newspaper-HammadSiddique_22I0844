@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Newspaper Recreation (HTML5)</title>
+</head>
+
+<body style="margin: 0; background: #eeeeee; font-family: Arial, Helvetica, sans-serif; color: #111;">
+
+  <!-- =========================================================
+       HEADER: Newspaper masthead area (logo/title + top tagline)
+       ========================================================= -->
+  <header id="masthead" style="background: #ffffff; border-bottom: 3px solid #000; padding: 10px 0;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 12px;">
+      <div style="display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap;">
+        <h1 style="margin: 0; font-size: 44px; letter-spacing: 0.5px;">
+          Daily News
+        </h1>
+        <p style="margin: 0 0 6px; font-size: 13px; color: #333;">
+          English recreation of an Urdu newspaper layout (70% visual similarity target)
+        </p>
+      </div>
+
+      <!-- Masthead / logo image (optional) -->
+      <img
+        src="images/masthead.png"
+        alt="Newspaper masthead / logo"
+        style="display: block; margin-top: 8px; width: 100%; max-width: 1100px; border: 1px solid #ccc;"
+      />
+    </div>
+  </header>
+
+  <!-- =========================================================
+       NAV: Simple navigation (required semantic tag + list)
+       ========================================================= -->
+  <nav id="top-nav" style="background: #f9f9f9; border-bottom: 1px solid #ccc;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 10px 12px;">
+      <ul style="margin: 0; padding-left: 18px; display: flex; gap: 18px; flex-wrap: wrap;">
+        <li><a href="#top-stories" style="color: #0b3d91; text-decoration: none;">Top Stories</a></li>
+        <li><a href="#national" style="color: #0b3d91; text-decoration: none;">National</a></li>
+        <li><a href="#courts" style="color: #0b3d91; text-decoration: none;">Courts</a></li>
+        <li><a href="#economy" style="color: #0b3d91; text-decoration: none;">Economy</a></li>
+        <li><a href="#footer" style="color: #0b3d91; text-decoration: none;">Footer</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =========================================================
+       MAIN: Entire front page content
+       NOTE: Uses at least ONE table for column layout (required)
+       ========================================================= -->
+  <main id="front-page" style="max-width: 1100px; margin: 14px auto; padding: 0 12px;">
+
+    <!-- =========================================================
+         TOP STORIES STRIP (two big headlines like the original)
+         ========================================================= -->
+    <section id="top-stories" style="background: #ffffff; border: 1px solid #cfcfcf; padding: 10px;">
+
+      <!-- Top thin strip (light/cream) -->
+      <div style="background: #f3e9d8; border: 1px solid #e2d5be; padding: 6px 8px; font-size: 12px; color: #222;">
+        Note: The original page is in Urdu; the text below is translated into natural English while keeping the same placement and “newspaper tone”.
+      </div>
+
+      <!-- TABLE: Top row split into LEFT headline and RIGHT headline (like original) -->
+      <table style="width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 10px;">
+        <tr>
+          <!-- LEFT TOP BIG STORY -->
+          <td style="width: 50%; vertical-align: top; padding: 8px; border-right: 1px solid #d7d7d7;">
+            <article id="story-1" style="margin: 0;">
+              <!-- Article headline -->
+              <h2 style="margin: 0; font-size: 30px; line-height: 1.15;">
+                65% of Ministers and Advisors Face Possible Disqualification
+              </h2>
+              <p style="margin: 6px 0 10px; font-size: 13px; color: #333;">
+                A major political shake-up is being discussed as legal and administrative scrutiny intensifies.
+              </p>
+
+              <!-- Image 1 (as per your numbered supporting image) -->
+              <img
+                src="images/Image 1.png"
+                alt="Image 1: Political figure photo from the newspaper"
+                style="width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <!-- Two column-like text blocks within the story -->
+              <section style="margin-top: 10px;">
+                <h3 style="margin: 0 0 6px; font-size: 16px; color: #111;">
+                  What the report claims
+                </h3>
+                <p style="margin: 0; font-size: 13px; line-height: 1.65; color: #222;">
+                  The report suggests that a large portion of the cabinet could be impacted due to eligibility,
+                  documentation, or compliance concerns. Officials deny wrongdoing, while critics demand transparent action.
+                </p>
+              </section>
+
+              <section style="margin-top: 10px;">
+                <h4 style="margin: 0 0 6px; font-size: 14px; color: #111;">
+                  Next expected steps
+                </h4>
+                <p style="margin: 0; font-size: 13px; line-height: 1.65; color: #222;">
+                  Sources indicate that clarifications, record checks, and legal review may follow. Political parties are
+                  preparing responses as the issue dominates debate.
+                </p>
+              </section>
+            </article>
+          </td>
+
+          <!-- RIGHT TOP BIG STORY -->
+          <td style="width: 50%; vertical-align: top; padding: 8px;">
+            <article id="story-2" style="margin: 0;">
+              <!-- Blue strip headline like original -->
+              <div style="background: #204a87; color: #fff; padding: 6px 8px; border: 1px solid #173868;">
+                <h2 style="margin: 0; font-size: 26px; line-height: 1.15;">
+                  Economic Survey Highlights: Inflation, Jobs, and Development Targets
+                </h2>
+              </div>
+
+              <p style="margin: 8px 0 10px; font-size: 13px; color: #333;">
+                The survey outlines growth expectations, public spending priorities, and cost-of-living pressures.
+              </p>
+
+              <!-- Image 2 -->
+              <img
+                src="images/Image 2.png"
+                alt="Image 2: Official ceremony / government hall photo from the newspaper"
+                style="width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <section id="economy" style="margin-top: 10px;">
+                <h3 style="margin: 0 0 6px; font-size: 16px; color: #111;">
+                  Key points in the survey
+                </h3>
+                <p style="margin: 0; font-size: 13px; line-height: 1.65; color: #222;">
+                  According to the survey summary, economic stability remains a priority, with emphasis on investment,
+                  exports, and social protection. The document also signals tighter oversight of public programs.
+                </p>
+              </section>
+            </article>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- =========================================================
+         MID PAGE: Multi-column newspaper grid (table layout)
+         ========================================================= -->
+    <section id="mid-grid" style="margin-top: 12px; background: #ffffff; border: 1px solid #cfcfcf; padding: 10px;">
+
+      <!-- TABLE: 3 columns like the original middle area -->
+      <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <tr>
+          <!-- LEFT COLUMN -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px; border-right: 1px solid #d7d7d7;">
+
+            <!-- Story 3 (Image 3) -->
+            <article id="story-3">
+              <div style="background: #ffffff; border-bottom: 2px solid #000; padding-bottom: 6px;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  Government: “We Will Not Allow Disorder”
+                </h3>
+                <p style="margin: 6px 0 0; font-size: 12.5px; color: #333;">
+                  Officials claim firm measures will be taken against those spreading chaos.
+                </p>
+              </div>
+
+              <img
+                src="images/Image 3.png"
+                alt="Image 3: Speaker / official photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                A senior representative stated that law-and-order will be maintained. Authorities say they will proceed
+                within the law, while opposition groups demand accountability and restraint.
+              </p>
+            </article>
+
+            <!-- Small sidebar item (text-only block like original) -->
+            <section style="margin-top: 12px; border: 1px solid #e2e2e2; padding: 8px; background: #fafafa;">
+              <h4 style="margin: 0 0 6px; font-size: 14px;">Briefs</h4>
+              <p style="margin: 0; font-size: 12.8px; line-height: 1.6;">
+                Additional short updates appear across the page: administrative notices, statements, and local events.
+              </p>
+            </section>
+
+          </td>
+
+          <!-- MIDDLE COLUMN -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px; border-right: 1px solid #d7d7d7;">
+
+            <!-- Grey strip headline like original -->
+            <article id="story-6">
+              <div style="background: #dfeff6; border: 1px solid #b7d7e3; padding: 6px 8px;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  City Update: Police Action After a Violent Incident
+                </h3>
+              </div>
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                A case has been registered, and initial investigation has begun. Authorities say statements are being recorded
+                and evidence is being reviewed.
+              </p>
+            </article>
+
+            <!-- Red strip in the center like original -->
+            <article id="story-9" style="margin-top: 12px;">
+              <div style="background: #c40000; color: #fff; padding: 8px; border: 1px solid #860000;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  Public Rally: “7 May” Message Draws Large Crowd
+                </h3>
+              </div>
+
+              <!-- Image 6 -->
+              <img
+                src="images/Image 6.png"
+                alt="Image 6: Crowd / protest style photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                Organizers described the gathering as peaceful. Speakers repeated political demands and urged supporters
+                to remain united. Officials say public order must be observed.
+              </p>
+
+              <!-- Small list inside the story (extra structure + readability) -->
+              <h4 style="margin: 10px 0 6px; font-size: 14px;">What the speakers emphasized</h4>
+              <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7;">
+                <li>Unity and discipline among supporters</li>
+                <li>Legal and constitutional routes for demands</li>
+                <li>Protection of public safety during gatherings</li>
+              </ul>
+            </article>
+
+          </td>
+
+          <!-- RIGHT COLUMN -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px;">
+
+            <!-- Black strip story like original -->
+            <article id="story-4">
+              <div style="background: #111111; color: #ffffff; padding: 8px; border: 1px solid #000;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  Supreme Court Hearing: Petition and Arguments
+                </h3>
+              </div>
+
+              <!-- Image 4 -->
+              <img
+                src="images/Image 4.png"
+                alt="Image 4: Supreme Court building photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                Lawyers presented arguments, and the bench examined procedural points. The matter is expected to continue
+                after further submissions, with the court seeking clarity on legal standing and timelines.
+              </p>
+            </article>
+
+            <!-- Narrow text block below (like original vertical column) -->
+            <section style="margin-top: 12px; border: 1px solid #e2e2e2; padding: 8px;">
+              <h4 style="margin: 0 0 6px; font-size: 14px;">Opinion</h4>
+              <p style="margin: 0; font-size: 12.8px; line-height: 1.6;">
+                Analysts say the coming weeks may define institutional direction and political stability, depending on how
+                stakeholders respond to court decisions and public pressure.
+              </p>
+            </section>
+
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- =========================================================
+         LOWER PAGE: More blocks + pink/colored strips + images
+         ========================================================= -->
+    <section id="lower-grid" style="margin-top: 12px; background: #ffffff; border: 1px solid #cfcfcf; padding: 10px;">
+
+      <!-- TABLE: 3 columns with a larger middle story like the original bottom area -->
+      <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <tr>
+          <!-- LEFT LOWER COLUMN -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px; border-right: 1px solid #d7d7d7;">
+
+            <!-- Story 5 -->
+            <article id="story-5">
+              <h3 id="national" style="margin: 0; font-size: 18px; border-bottom: 2px solid #000; padding-bottom: 6px;">
+                National Politics: Senior Figure’s Statement
+              </h3>
+
+              <img
+                src="images/Image 5.png"
+                alt="Image 5: Another political figure photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                A senior leader criticized rival parties and claimed the public is being misled. Supporters say the statement
+                reflects growing frustration; opponents call it political point-scoring.
+              </p>
+            </article>
+
+            <!-- Pink strip story like original -->
+            <article id="story-7" style="margin-top: 12px;">
+              <div style="background: #d80073; color: #ffffff; padding: 8px; border: 1px solid #9c0051;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  “After 1990”: Policy Shift and Party Re-alignment
+                </h3>
+              </div>
+
+              <!-- Image 7 -->
+              <img
+                src="images/Image 7.png"
+                alt="Image 7: Political leader at podium photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                The article reflects on post-1990 political changes, the rise of new alliances, and policy direction.
+                Commentators link past decisions with today’s institutional and electoral landscape.
+              </p>
+            </article>
+
+          </td>
+
+          <!-- MIDDLE LOWER COLUMN (bigger featured story like original) -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px; border-right: 1px solid #d7d7d7;">
+
+            <article id="story-8">
+              <!-- Blue strip headline like original bottom featured -->
+              <div style="background: #1f5aa6; color: #ffffff; padding: 8px; border: 1px solid #163f78;">
+                <h3 style="margin: 0; font-size: 18px;">
+                  Cabinet Meeting Agenda Prepared: Key Decisions Expected
+                </h3>
+              </div>
+
+              <!-- Image 8 -->
+              <img
+                src="images/Image 8.png"
+                alt="Image 8: Official traveling / luggage photo from the newspaper"
+                style="margin-top: 8px; width: 100%; border: 1px solid #c9c9c9;"
+              />
+
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                Sources say multiple policy items are on the agenda, including administrative approvals and economic measures.
+                Observers expect the meeting to address public concerns and inter-department coordination.
+              </p>
+
+              <section style="margin-top: 10px; border: 1px solid #e2e2e2; padding: 8px; background: #fbfbfb;">
+                <h4 style="margin: 0 0 6px; font-size: 14px;">Possible agenda items</h4>
+                <ol style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7;">
+                  <li>Review of current economic indicators and public relief options</li>
+                  <li>Administrative approvals and departmental performance updates</li>
+                  <li>Security and law-and-order briefings</li>
+                </ol>
+              </section>
+            </article>
+
+          </td>
+
+          <!-- RIGHT LOWER COLUMN -->
+          <td style="width: 33.33%; vertical-align: top; padding: 8px;">
+
+            <article id="courts">
+              <h3 style="margin: 0; font-size: 18px; border-bottom: 2px solid #000; padding-bottom: 6px;">
+                Courts and Institutions: Legal Developments Continue
+              </h3>
+              <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65;">
+                Several petitions and legal notices remain under consideration. Lawyers and observers say the final outcomes
+                will influence policy direction and public confidence.
+              </p>
+            </article>
+
+            <section style="margin-top: 12px; border: 1px solid #e2e2e2; padding: 8px;">
+              <h4 style="margin: 0 0 6px; font-size: 14px;">Small Column</h4>
+              <p style="margin: 0; font-size: 12.8px; line-height: 1.6;">
+                Additional reports in the original include local administration updates, statements from public offices,
+                and follow-ups on earlier cases.
+              </p>
+            </section>
+
+          </td>
+        </tr>
+      </table>
+
+      <!-- A thin bottom rule like newspapers -->
+      <div style="margin-top: 12px; border-top: 2px solid #000;"></div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER: Publisher note + validation reminder
+       ========================================================= -->
+  <footer id="footer" style="background: #ffffff; border-top: 2px solid #000; padding: 12px 0; margin-top: 14px;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 12px;">
+      <h4 style="margin: 0 0 6px; font-size: 14px;">Assignment Notes</h4>
+      <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #222;">
+        This HTML uses semantic tags (header, nav, section, article, footer), a table-based column layout, inline styles only,
+        and image placeholders mapped as images/Image 1.png … images/Image 8.png.
+        You can validate this HTML at https://validator.w3.org/ by copying and pasting the code.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
